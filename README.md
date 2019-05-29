@@ -82,3 +82,13 @@ Installation of scaffolding will take some time.
 ## Run `gulp serve` in your console to start local workbench
 
 Local Workbench - for testing locally
+
+## If the workbench doesn't run or you can't access it on your browser.
+
+Modify confg/serve.json and set https: false for the meantime
+
+## Access Online Workbench
+
+Sample: https://yoursharepointsite.com/_layouts/15/workbench.aspx
+
+## Run `gulp package-solution`

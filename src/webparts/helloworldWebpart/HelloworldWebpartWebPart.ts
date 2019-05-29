@@ -1,31 +1,40 @@
-import { Version } from '@microsoft/sp-core-library';
+import { Version } from "@microsoft/sp-core-library";
 import {
   BaseClientSideWebPart,
   IPropertyPaneConfiguration,
   PropertyPaneTextField
-} from '@microsoft/sp-webpart-base';
-import { escape } from '@microsoft/sp-lodash-subset';
+} from "@microsoft/sp-webpart-base";
+import { escape } from "@microsoft/sp-lodash-subset";
 
-import styles from './HelloworldWebpartWebPart.module.scss';
-import * as strings from 'HelloworldWebpartWebPartStrings';
+import styles from "./HelloworldWebpartWebPart.module.scss";
+import * as strings from "HelloworldWebpartWebPartStrings";
 
 export interface IHelloworldWebpartWebPartProps {
   description: string;
 }
 
-export default class HelloworldWebpartWebPart extends BaseClientSideWebPart<IHelloworldWebpartWebPartProps> {
-
+export default class HelloworldWebpartWebPart extends BaseClientSideWebPart<
+  IHelloworldWebpartWebPartProps
+> {
   public render(): void {
+    const title = this.context.pageContext.web.title;
     this.domElement.innerHTML = `
-      <div class="${ styles.helloworldWebpart }">
-        <div class="${ styles.container }">
-          <div class="${ styles.row }">
-            <div class="${ styles.column }">
-              <span class="${ styles.title }">Welcome to SharePoint!</span>
-              <p class="${ styles.subTitle }">Customize SharePoint experiences using Web Parts.</p>
-              <p class="${ styles.description }">${escape(this.properties.description)}</p>
-              <a href="https://aka.ms/spfx" class="${ styles.button }">
-                <span class="${ styles.label }">Learn more</span>
+      <div class="${styles.helloworldWebpart}" style='border:2px solid red'>
+        <div class="${styles.container}">
+          <div class="${styles.row}">
+            <div class="${styles.column}">
+              <span class="${
+                styles.title
+              }">Zeke 07, Welcome to SharePoint!</span>
+              <p class="${
+                styles.subTitle
+              }">Customize SharePoint experiences using Web Parts.</p>
+              <p class="${styles.description}">${escape(
+      this.properties.description
+    )}</p>
+    <p>${title}</p>
+              <a href="https://aka.ms/spfx" class="${styles.button}">
+                <span class="${styles.label}">Learn more</span>
               </a>
             </div>
           </div>
@@ -34,7 +43,7 @@ export default class HelloworldWebpartWebPart extends BaseClientSideWebPart<IHel
   }
 
   protected get dataVersion(): Version {
-    return Version.parse('1.0');
+    return Version.parse("1.0");
   }
 
   protected getPropertyPaneConfiguration(): IPropertyPaneConfiguration {
@@ -48,7 +57,7 @@ export default class HelloworldWebpartWebPart extends BaseClientSideWebPart<IHel
             {
               groupName: strings.BasicGroupName,
               groupFields: [
-                PropertyPaneTextField('description', {
+                PropertyPaneTextField("description", {
                   label: strings.DescriptionFieldLabel
                 })
               ]
