@@ -14,7 +14,7 @@ Most steps here can be found in : [Official MS Documentation](https://docs.micro
 
 ---
 
-### Install Yeoman and gulp
+### Install [Yeoman](https://yeoman.io) and [gulp](https://gulpjs.com/)
 
 ```js
 
@@ -66,3 +66,11 @@ gulp trust-dev-cert
 ---
 
 ## Getting Started with First Sample Webpart
+
+Run
+
+```
+    yo @microsoft/sharepoint
+```
+
+[Sample Yo](images/yo.PNG)
