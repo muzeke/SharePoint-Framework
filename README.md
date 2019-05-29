@@ -67,6 +67,8 @@ gulp trust-dev-cert
 
 ## Getting Started with First Sample Webpart
 
+Refer to (this tutorial.)[https://www.youtube.com/watch?v=S3tG2DE8tR8]
+
 Run
 
 ```
@@ -74,3 +76,9 @@ Run
 ```
 
 ![Sample Yo](images/yo.PNG)
+
+Installation of scaffolding will take some time.
+
+## Run `gulp serve` in your console to start local workbench
+
+Local Workbench - for testing locally
