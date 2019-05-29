@@ -26,3 +26,7 @@ If you get an error: "yo" is not recognized as an internal or external command, 
 
 Get the npm AppData Path by running (WinKey + R) : %APPDATA%\npm
 It should give you the location, copy the path : It will look like this: 'D:\Users\John E Sebulino\AppData\Roaming\npm'
+
+Then Search for : "Environmen Variable" and click it
+
+![env](images/env.PNG)
