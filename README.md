@@ -67,7 +67,7 @@ gulp trust-dev-cert
 
 ## Getting Started with First Sample Webpart
 
-Refer to (this tutorial.)[https://www.youtube.com/watch?v=S3tG2DE8tR8]
+Refer to [this tutorial](https://www.youtube.com/watch?v=S3tG2DE8tR8).
 
 Run
 
