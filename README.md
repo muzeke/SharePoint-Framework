@@ -73,4 +73,4 @@ Run
     yo @microsoft/sharepoint
 ```
 
-[Sample Yo](images/yo.PNG)
+![Sample Yo](images/yo.PNG)
